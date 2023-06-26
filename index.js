@@ -14,8 +14,10 @@ function createGrid(gridSize) {
             containerGrid.append(cell);
         }
     }
+    containerGrid.style = `grid-template-rows: 
+        repeat(${gridSize}, 1fr)`;
     containerGrid.style = `grid-template-columns: 
-        repeat(${gridSize}, 0fr)`;
+        repeat(${gridSize}, 1fr)`;
 }
 
 function getGridSize() {
