@@ -31,15 +31,20 @@ h1 {
 }
 
 .settings-size {
+    width: 190px;
+
     display: flex;
     gap: 15px;
 }
 
 .container-grid {
+    border: 5px solid #90adc6;
     margin: 50px;
+    height: 30vw;
+    width: 30vw;
 
     display: grid;
-    grid-template-columns: repeat(16, 0fr);
+    grid-template-columns: repeat(16, 1fr);
 }
 
 .grid-cell:hover {
@@ -47,7 +52,5 @@ h1 {
 }
 
 .grid-cell {
-    height: 25px;
-    width: 25px;
-    border: 1px solid;
+    border: 1px solid rgba(250, 208, 44, 0.5);
 }
