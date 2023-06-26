@@ -3,19 +3,6 @@ const inSize = document.querySelector('#input-size');
 const displaySize = document.querySelector('#display-size');
 const gridBtn = document.querySelector('#grid-btn');
 
-function initGrid() {
-    let gridSize = 16;
-
-    for (let i = 0; i < gridSize; i++) {
-        for (let j = 0; j <= gridSize; j++) {
-            const cell = document.createElement('div');
-            cell.classList.add('grid-cell');
-            // cell.textContent = (i * gridSize) + j;
-            containerGrid.append(cell);
-        }
-    }
-}
-
 function createGrid(gridSize) {
     resetGrid();
 
@@ -51,4 +38,4 @@ gridBtn.addEventListener('click', function(e) {
 inSize.addEventListener('input', getGridSize);
 
 // Create initial grid of 16x16
-initGrid();
+createGrid(16);
