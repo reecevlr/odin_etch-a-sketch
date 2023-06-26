@@ -15,3 +15,28 @@ h1 {
     margin-top: 1.5vh;
     text-align: center; 
 }
+
+/* Main Classes */
+.container-main {
+    display: flex;
+    gap: 50px;
+}
+
+.settings {
+    margin: 50px;
+}
+
+.container-grid {
+    margin: 50px;
+    display: grid;
+}
+
+.grid-cell:hover {
+    background-color: #fad02c;
+}
+
+.grid-cell {
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+}
