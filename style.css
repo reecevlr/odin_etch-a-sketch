@@ -24,11 +24,22 @@ h1 {
 
 .settings {
     margin: 50px;
+
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 15px;
+}
+
+.settings-size {
+    display: flex;
+    gap: 15px;
 }
 
 .container-grid {
     margin: 50px;
+
     display: grid;
+    grid-template-columns: repeat(16, 0fr);
 }
 
 .grid-cell:hover {
