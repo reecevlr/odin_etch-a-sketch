@@ -4,11 +4,19 @@
 - [x] Create grid
 - [x] Allow grid size adjustment
 - [x] Hover trail
+- [ ] Styling
 
 ## Extras
-- [ ] Hover -> Pen trail
-- [ ] Clear canvas
+- [x] Hover -> Pen trail
+- [x] Clear canvas
 - [ ] Colors
   - [ ] Single
   - [ ] Rainbow
-- [ ] Black squares after 10 interactions
+- [ ] Blacked cells after 10 interactions
+
+## References:
+- Color Palette 
+  - https://www.canva.com/colors/color-palettes/foil-covered-sneakers/
+
+- Cell Event Listeners
+  - https://stackoverflow.com/questions/75142612/make-the-background-color-of-div-change-when-the-mouse-is-down-and-hovering
