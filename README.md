@@ -20,11 +20,8 @@ Check it out [here](https://reecevlr.github.io/odin_etch-a-sketch/)!
 - Color returns to default when grid is resized
 
 ## References:
-- Color Palette 
-  - https://www.canva.com/colors/color-palettes/foil-covered-sneakers/
+- [Color Palette](https://www.canva.com/colors/color-palettes/foil-covered-sneakers/)
 
-- Cell Event Listeners
-  - https://stackoverflow.com/questions/75142612/make-the-background-color-of-div-change-when-the-mouse-is-down-and-hovering
+- [Cell Event Listeners](https://stackoverflow.com/questions/75142612/make-the-background-color-of-div-change-when-the-mouse-is-down-and-hovering)
 
-- Random Color function
-  - https://stackoverflow.com/a/17373688
+- [Random Color function](https://stackoverflow.com/a/17373688)
