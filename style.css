@@ -1,7 +1,13 @@
+:root {
+    --font_color: #fad02c;
+    --bg: #333652;
+    --border: #90adc6;
+}
+
 * {
-    background-color: #333652;
+    background-color: var(--bg);
     box-sizing: border-box;
-    color: #fad02c;
+    color: var(--font_color);
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
@@ -20,7 +26,21 @@ h1 {
     text-align: center; 
 }
 
-/* Main Classes */
+/* Individual Elements */
+.btn {
+    padding: 5px;
+    width: 180px;
+}
+
+/* .btn:hover {
+    background-color: 
+} */
+
+#color-in {
+    width: 65px;
+}
+
+/* Content Bodies */
 .container {
     height: 100%;
     width: 100%;
@@ -56,6 +76,14 @@ h1 {
     gap: 15px;
 }
 
+.settings-controls-in {
+    display: flex;
+}
+
+.settings-controls-in .btn {
+    width: 115px;
+}
+
 .settings-size-in {
     width: 190px;
 
@@ -64,7 +92,7 @@ h1 {
 }
 
 .container-grid {
-    border: 5px solid #90adc6;
+    border: 5px solid var(--border);
     margin: 50px;
     height: 30vw;
     width: 30vw;
@@ -74,7 +102,7 @@ h1 {
 }
 
 .grid-cell:hover {
-    background-color: #fad02c;
+    background-color: var(--font_color);
 }
 
 .grid-cell {
