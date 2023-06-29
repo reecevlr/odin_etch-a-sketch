@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-Check it out here: https://reecevlr.github.io/odin_etch-a-sketch/
+Check it out [here](https://reecevlr.github.io/odin_etch-a-sketch/)!
 
 ## Progress:
 - [x] Create grid
