@@ -75,6 +75,7 @@ function setColor(e) {
     }
 }
 
+// Credits to: Phillip (StackOverflow)
 function setCellListener(gridCells, color) {
     let flag = false;
 
