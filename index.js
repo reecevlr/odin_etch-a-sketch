@@ -75,7 +75,7 @@ function setColor(e) {
     }
 }
 
-// Credits to: Phillip (StackOverflow)
+// Credits: Phillip (StackOverflow) => Basis
 function setCellListener(gridCells, color) {
     let flag = false;
 
@@ -85,29 +85,54 @@ function setCellListener(gridCells, color) {
 
     if (color !== undefined) {
         gridCells.forEach(cell => {
+            let brightness = 100;
+
             cell.onmouseover = () => {
                 if (flag) {
                     cell.style.backgroundColor = color;
+
+                    cell.style.filter = `brightness(${brightness}%)`;
+                    brightness = reduceBrightness(brightness);
                 }
             }
             cell.onmousedown = () => {
                 cell.style.backgroundColor = color;
                 flag = true;
+
+                cell.style.filter = `brightness(${brightness}%)`;
+                brightness = reduceBrightness(brightness);
             }
         });
     }
     else {
         gridCells.forEach(cell => {
+            let brightness = 100;
+
             cell.onmouseover = () => {
                 if (flag) {
                     cell.style.backgroundColor = getRandomColor(150);
+
+                    cell.style.filter = `brightness(${brightness}%)`;
+                    brightness = reduceBrightness(brightness);
                 }
             }
             cell.onmousedown = () => {
                 cell.style.backgroundColor = getRandomColor(150);
                 flag = true;
+
+                cell.style.filter = `brightness(${brightness}%)`;
+                brightness = reduceBrightness(brightness);
             }
         });
+    }
+}
+
+function reduceBrightness(brightness) {
+    if (brightness === 100) {
+         return brightness - 20;
+    }
+    else {
+        return brightness - 10;
     }
 }
 
@@ -126,12 +151,12 @@ function getGridSize() {
     displaySize.textContent = inSize.value;
 } 
 
-// Credits to: David Mihal (StackOverflow)
+// Credits: David Mihal (StackOverflow)
 function getRandomColor(brightness) {
     function randomChannel(brightness) {
-        var r = 255 - brightness;
-        var n = 0|((Math.random() * r) + brightness);
-        var s = n.toString(16);
+        let r = 255 - brightness;
+        let n = 0|((Math.random() * r) + brightness);
+        let s = n.toString(16);
         
         return (s.length==1) ? '0'+s : s;
     }
