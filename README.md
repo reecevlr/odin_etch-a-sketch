@@ -14,7 +14,7 @@ Check it out [here](https://reecevlr.github.io/odin_etch-a-sketch/)!
   - [x] White -> Classic
   - [x] Black -> Input Color
   - [x] Rainbow
-- [ ] Blacked cells after 10 interactions
+- [x] Blacked cells after 10 interactions
 
 ## Bugs/Areas to Improve
 - Color returns to default when grid is resized
